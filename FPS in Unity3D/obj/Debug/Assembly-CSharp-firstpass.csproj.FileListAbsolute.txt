@@ -31,3 +31,36 @@ A:\Unity FPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.VR.xml
 A:\Unity FPS\Uni3DProject\FPS in Unity3D\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 A:\Unity FPS\Uni3DProject\FPS in Unity3D\obj\Debug\Assembly-CSharp-firstpass.dll
 A:\Unity FPS\Uni3DProject\FPS in Unity3D\obj\Debug\Assembly-CSharp-firstpass.pdb
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\nunit.framework.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEditor.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEditor.iOS.Extensions.Common.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.Analytics.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.HoloLens.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.Networking.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.TestRunner.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.UI.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.VR.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Mono.Cecil.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Unity.SerializationLogic.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Unity.DataContract.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Unity.UNetWeaver.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Unity.CecilTools.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEditor.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.UI.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.Networking.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.TestRunner.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\nunit.framework.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.Analytics.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.HoloLens.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\Temp\bin\Debug\UnityEngine.VR.xml
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\obj\Debug\Assembly-CSharp-firstpass.dll
+A:\UnityFPS\Uni3DProject\FPS in Unity3D\obj\Debug\Assembly-CSharp-firstpass.pdb

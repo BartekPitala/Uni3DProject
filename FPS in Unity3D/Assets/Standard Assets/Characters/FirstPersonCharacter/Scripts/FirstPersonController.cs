@@ -44,21 +44,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-        //code added by Petro Marshal
         private bool m_CanRun = true;
-
-        //code added by Petro Marshal
-        public float GetWalkSpeed()
-        {
-            return m_WalkSpeed;
-        }
-        //code added by Petro Marshal
-        public float GetRunSpeed()
-        {
-            return m_RunSpeed;
-        }
-
-        //code added by Petro Marshal
         public bool CanRun
         {
             get { return m_CanRun; }
