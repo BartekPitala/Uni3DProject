@@ -100,6 +100,28 @@ public class Shooting : MonoBehaviour {
 
     }
 
+    public bool canGetAmmo()
+    {
+        if (currentAmmo == maxAmmo)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    void addAmmo(Vector2 data)
+    {
+        int ammoToAdd = (int)data.x;
+
+        if (maxAmmo - currentAmmo >= ammoToAdd)
+        {
+            currentAmmo += ammoToAdd;
+        }
+        else
+        {
+            currentAmmo = maxAmmo;
+        }
+    }
 
     void OnGUI()
     {

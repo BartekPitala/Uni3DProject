@@ -39,7 +39,7 @@ public class PlayerStats : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.DrawTexture(new Rect(Screen.width - barWidth - 950,
+        GUI.DrawTexture(new Rect(10,
                                  Screen.height - barHeight - 10,
                                  currentStamina * barWidth / maxStamina,
                                  barHeight),
@@ -47,7 +47,7 @@ public class PlayerStats : MonoBehaviour
 
 
 
-        GUI.DrawTexture(new Rect(Screen.width - barWidth - 950,
+        GUI.DrawTexture(new Rect(10,
                                  Screen.height - barHeight * 2 - 20,
                                  currentArmour * barWidth / maxArmour,
                                  barHeight),
@@ -55,13 +55,13 @@ public class PlayerStats : MonoBehaviour
 
         if (currentArmour > 0)
         {
-            GUI.Label(new Rect(Screen.width - barWidth - 700,
+            GUI.Label(new Rect(barWidth + 20,
                              Screen.height - barHeight - 42,
                              maxArmour,
                              barHeight), (currentArmour / maxArmour * 100).ToString() + "/100");
         }
 
-        GUI.DrawTexture(new Rect(Screen.width - barWidth - 950,
+        GUI.DrawTexture(new Rect(10,
                                  Screen.height - barHeight * 3 - 30,
                                  currentHealth * barWidth / maxHealth,
                                  barHeight),
@@ -69,7 +69,7 @@ public class PlayerStats : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            GUI.Label(new Rect(Screen.width - barWidth - 700,
+            GUI.Label(new Rect(barWidth + 20,
                              Screen.height - barHeight - 77,
                              maxArmour,
                              barHeight), (int)(currentHealth / maxHealth * 100) + "/100");
