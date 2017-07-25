@@ -4,15 +4,18 @@ using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class Shooting : MonoBehaviour {
-
+	
     public Texture2D crosshairTexture;
     public AudioClip pistolShot;
     public AudioClip reloadSound;
     public int maxAmmo = 200;
-    public int clipSize = 10;
+    public int clipSize = 20;
     public GUIText ammoText;
     public GUIText reloadText;
     public float reloadTime = 2.0f;
+	public bool automatic = false;
+	public float shotDelay = 0.5f;
+	public GameObject bulletHole;
 
     private int currentAmmo = 30;
     private int currentClip;
@@ -22,6 +25,9 @@ public class Shooting : MonoBehaviour {
     private Vector3 fwd;
     private RaycastHit hit;
     private bool isReloading = false;
+	private float shotDelayCounter = 0.0f;
+	private float zoomFieldOfView = 40.0f;
+	private float defaultFieldOfView = 60.0f;
 
     private float timer = 0.0f;
 
@@ -45,25 +51,29 @@ public class Shooting : MonoBehaviour {
     {
         fwd = transform.TransformDirection(Vector3.forward);
 
-        if (Input.GetButtonDown("Fire1") && currentClip > 0 && !isReloading)
-        {
-            currentClip--;
-            pistolSparks.GetComponent<ParticleEmitter>().Emit();
-            GetComponent<AudioSource>().Play();
+		if (currentClip > 0 && !isReloading)
+		{
+			if((Input.GetButtonDown ("Fire1") || Input.GetButton("Fire1") && automatic) && shotDelayCounter <= 0)
+			{
+				currentClip--;
+				pistolSparks.GetComponent<ParticleEmitter> ().Emit ();
+				GetComponent<AudioSource> ().Play ();
 
-            if (Physics.Raycast(transform.position, fwd, out hit))
-            {
-                if (hit.transform.tag == "Enemy" && hit.distance < range)
-                {
-                    Debug.Log("Trafiony przeciwnik");
+				if (Physics.Raycast (transform.position, fwd, out hit)) 
+				{
+					if (hit.transform.tag == "Enemy" && hit.distance < range) {
+						Debug.Log ("Trafiony przeciwnik");
 
-                }
-                else if (hit.distance < range)
-                {
-                    Debug.Log("Trafiona Sciana");
-                }
-            }
-        }
+					} 
+					else if (hit.distance < range) {
+						GameObject go;
+						go = Instantiate(bulletHole, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal)) as GameObject; 
+						Destroy(go, 5);
+						Debug.Log ("Trafiona Sciana");
+					}
+				}
+			}
+		}
 
         if (((Input.GetButtonDown("Fire1") && currentClip == 0) || Input.GetButtonDown("Reload")) && currentClip < clipSize)
         {
@@ -97,6 +107,19 @@ public class Shooting : MonoBehaviour {
                 timer = 0.0f;
             }
         }
+
+		if(gameObject.GetComponentInParent<Camera>() is Camera) {
+			Camera cam = gameObject.GetComponentInParent<Camera>();
+			if(Input.GetButton("Fire2")) {
+				if(cam.fieldOfView > zoomFieldOfView) {
+					cam.fieldOfView--;
+				}
+			} else {
+				if(cam.fieldOfView < defaultFieldOfView) {
+					cam.fieldOfView++;
+				}
+			}
+		}
 
     }
 
