@@ -1,4 +1,4 @@
-﻿#CHANGELOG
+#CHANGELOG
 
 [ !!! WYPELNIAJCIE TO, BEDZIE NAM LATWIEJ SPAMIETAC NA CO ZWROCIC UWAGE JESZCZE (moze wypelnijcie nawet wstecz jak pamietacie)!!!]
 
@@ -21,7 +21,3 @@
                       Te dziury sie tez pojawiaja troche obok celownika, dziwne to jest ale to musi byc zwiazane
                       mysle z jakimis poprzednimi czesciami tutoriala i tym gdzie "patrzy" dokladnie kamera albo cos.....
                       
-
-
-[Michał] zrobiłem wroga, choć nie porusza się w stałej płaszczyźnie y. Inny problem to brak ravast hit triggers, ale chyba sobie z nim poradziłem. Jak wróg nas uderza trzeba wyświetlić tę teksturę z krwią.
-Dodam potem dźwięk jak zbiera się broń oraz napisy ze stanem amunicji. 
