@@ -21,3 +21,14 @@
                       Te dziury sie tez pojawiaja troche obok celownika, dziwne to jest ale to musi byc zwiazane
                       mysle z jakimis poprzednimi czesciami tutoriala i tym gdzie "patrzy" dokladnie kamera albo cos.....
                       
+[Michał] 28.07.2017 - dodany wróg z animacjami
+                     
+                      brak w opcjach ravcast hit triggers, ale chyba sobie z tym poradziłem (choć nie jestem pewien)
+                    
+                      jak wróg nas uderza to nie ma jeszcze animacji z krwią 
+                      
+                      wróg wisi w powietrzu (cos trzeba zrobic z osia y)
+                      
+                      
+                      
+                      
