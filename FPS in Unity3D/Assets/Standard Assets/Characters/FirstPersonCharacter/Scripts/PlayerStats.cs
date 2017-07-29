@@ -39,6 +39,17 @@ public class PlayerStats : MonoBehaviour
 
     void OnGUI()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //SceneManager.LoadScene("scene1");
+            Application.LoadLevel("Menu");
+        }
+
+
+
+
+
         GUI.DrawTexture(new Rect(10,
                                  Screen.height - barHeight - 10,
                                  currentStamina * barWidth / maxStamina,
