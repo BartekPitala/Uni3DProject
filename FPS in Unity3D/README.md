@@ -1,4 +1,4 @@
-#CHANGELOG
+﻿#CHANGELOG
 
 [ !!! WYPELNIAJCIE TO, BEDZIE NAM LATWIEJ SPAMIETAC NA CO ZWROCIC UWAGE JESZCZE (moze wypelnijcie nawet wstecz jak pamietacie)!!!]
 
@@ -28,6 +28,36 @@
                       jak wróg nas uderza to nie ma jeszcze animacji z krwią 
                       
                       wróg wisi w powietrzu (cos trzeba zrobic z osia y)
+                      
+[Michał] 04.08.2017 - co nam zostało?
+                      
+                      błędy powyższe są do naprawienia
+                      
+                      dodam /*dźwięk podczas zbierania amunicji*/ oraz napisy ze stanem amunicji 
+                      
+                      --
+                    
+                      trzeba poprawić teren
+                      
+                      jak zejdzie pod wodę to umiera 
+                      
+                      dodałbym kilka broni
+                      
+                      i może zbieranie czegoś co doda hp
+                      
+                      jak poprawimy teren to porozkładamy skrzynki z bronia i wrogów 
+                      
+                      w menu gry można napisać zakładkę w której jest instrukcja ocb w grze (chodzi w niej o to, żeby wszystkich zabić jak najszybciej)
+                      skoro jak najszybciej to zrobimy ranking z najlepszymi wynikami i może jakiś zegar w rogu czy coś 
+                      
+                     
+                      
+                      logo trzeba dodac (załatwię gotowe od Mikołaja)
+                      
+                      
+			
+		                       
+                      
                       
                       
                       
