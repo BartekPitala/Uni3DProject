@@ -28,12 +28,9 @@ public class EnemyAI : MonoBehaviour
         if (other.tag.Equals("Player") && hp > 0)
         {
             Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - transform.position);
-            float oryginalX = transform.rotation.x;
-            float oryginalZ = transform.rotation.z;
+            
 
             Quaternion finalRotation = Quaternion.Slerp(transform.rotation, targetRotation, 5.0f * Time.deltaTime);
-            finalRotation.x = oryginalX;
-            finalRotation.z = oryginalZ;
             transform.rotation = finalRotation;
 
             float distance = Vector3.Distance(transform.position, other.transform.position);

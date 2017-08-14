@@ -27,7 +27,7 @@
                     
                       jak wróg nas uderza to nie ma jeszcze animacji z krwią 
                       
-                      wróg wisi w powietrzu (cos trzeba zrobic z osia y)
+                     // wróg wisi w powietrzu (cos trzeba zrobic z osia y)
                       
 [Michał] 04.08.2017 - co nam zostało?
                       
@@ -54,6 +54,7 @@
                       
                       logo trzeba dodac (załatwię gotowe od Mikołaja)
                       
+		      wróg jak umiera to leży w powietrzu jak święty Piotr na krzyżu
                       
 			
 		                       
