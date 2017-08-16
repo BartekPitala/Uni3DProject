@@ -2,6 +2,9 @@
 
 [ !!! WYPELNIAJCIE TO, BEDZIE NAM LATWIEJ SPAMIETAC NA CO ZWROCIC UWAGE JESZCZE (moze wypelnijcie nawet wstecz jak pamietacie)!!!]
 
+
+[Piotrek] 16.08.2017 - Robie piekna plansze i przypomnialo mi sie, zeby NAPRAWIC PROBLEM Z CELOWNIKIEM!!!
+
 [Bartek] 25.07.2017 - Zrobilem party 9 i 10, ale nie do konca działa.
 
                       Granat sie rzuca, ale z okolo 2 sek. opoznieniem.
