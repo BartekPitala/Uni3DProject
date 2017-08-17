@@ -42,7 +42,6 @@
                     
                       trzeba poprawić teren
                       
-                      jak zejdzie pod wodę to umiera 
                       
                       dodałbym kilka broni
                       
