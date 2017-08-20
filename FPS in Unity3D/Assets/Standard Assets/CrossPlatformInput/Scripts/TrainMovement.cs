@@ -10,23 +10,22 @@ public class TrainMovement : MonoBehaviour
     void Start () {
         forward = true;
         GetComponent<AudioSource>().clip = trainSound;
+        GetComponent<AudioSource>().Play();
     }
 	// Update is called once per frame
 	void Update () {
 
-
-       // GetComponent<AudioSource>().Play();
-        if (transform.position.y <= 14.24 && transform.position.y >= 14.19 && forward)
+        if (transform.position.y <= 14.245 && transform.position.y >= 14.190 && forward)
         {
             transform.Translate(0f, -0.4f, 0f);
-            if(transform.position.y<=14.19)
+            if(transform.position.y<=14.191)
             forward = false;
 
         }
-        if (transform.position.y <= 14.24 && transform.position.y >= 14.18 && !forward)
+        if (transform.position.y <= 14.245 && transform.position.y >= 14.184 && !forward)
         {
             transform.Translate(0f, 0.4f, 0f);
-            if(transform.position.y>=14.235)
+            if(transform.position.y>=14.243)
             forward = true;
         }
 
