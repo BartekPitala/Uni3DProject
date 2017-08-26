@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour {
 
-	public float toExplode = 4.0f;
+	public float toExplode = 3.0f;
 	public GameObject explosion;
 	public AudioClip explosionSound;
 	public AudioSource explosionHolder;

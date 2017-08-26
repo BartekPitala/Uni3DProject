@@ -20,7 +20,7 @@ public class Shooting : MonoBehaviour {
     private int currentAmmo = 30;
     private int currentClip;
     private Rect position;
-    private float range = 10.0f;
+    private float range = 200.0f;
     private GameObject pistolSparks;
     private Vector3 fwd;
     private RaycastHit hit;
@@ -44,31 +44,38 @@ public class Shooting : MonoBehaviour {
                         crosshairTexture.height);
 
         pistolSparks = GameObject.Find("Sparks");
-        pistolSparks.GetComponent<ParticleEmitter>().emit = false;
         GetComponent<AudioSource>().clip = pistolShot;
         currentClip = clipSize;
+		pistolSparks.GetComponent<ParticleEmitter>().emit = false;
     }
-	
+
 	
 	void Update ()
     {
-        fwd = transform.TransformDirection(Vector3.forward);
+		if (shotDelayCounter > 0) {
+			shotDelayCounter -= Time.deltaTime;
+		}
+
+		Transform tf = transform.parent.GetComponent<Transform> ();
+		fwd = tf.TransformDirection (Vector3.forward);
 
 		if (currentClip > 0 && !isReloading)
 		{
 			if((Input.GetButtonDown ("Fire1") || Input.GetButton("Fire1") && automatic) && shotDelayCounter <= 0)
 			{
+				shotDelayCounter = shotDelay;
 				currentClip--;
-				pistolSparks.GetComponent<ParticleEmitter> ().Emit ();
+				pistolSparks.GetComponent<ParticleEmitter>().Emit ();
 				GetComponent<AudioSource> ().Play ();
 
-				if (Physics.Raycast (transform.position, fwd, out hit)) 
+				if (Physics.Raycast (tf.position, fwd, out hit)) 
 				{
 					if (hit.transform.tag == "Enemy" && hit.distance < range) {
                         hit.transform.gameObject.SendMessage("takeHit", demage);
                         GameObject go;
                         go = Instantiate(bloodParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal)) as GameObject;
                         Destroy(go, 0.3f);
+						Debug.Log ("ENEMY HIT");
 
                     } 
 					else if (hit.distance < range) {

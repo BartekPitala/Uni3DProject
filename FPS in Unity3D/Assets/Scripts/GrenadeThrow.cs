@@ -5,7 +5,7 @@ using UnityEngine;
 public class GrenadeThrow : MonoBehaviour {
 	public Rigidbody grenade;
 
-	private int currentGrenades = 2;
+	private int currentGrenades = 5;
 
 	// Use this for initialization
 	void Start () {
