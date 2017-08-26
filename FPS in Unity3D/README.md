@@ -2,6 +2,7 @@
 
 [ !!! WYPELNIAJCIE TO, BEDZIE NAM LATWIEJ SPAMIETAC NA CO ZWROCIC UWAGE JESZCZE (moze wypelnijcie nawet wstecz jak pamietacie)!!!]
 
+[Bartek] 25.08.2017 - Naprawiony celownik. Broń strzela dokładnie tam gdzie powinna ;). Naprawiłem też wyświetlanie tekstury dziury po kuli, jej miejsce, i wreszcie nie ma białego tła. Granat wybucha fajnie z dzwiekiem i wogole, ale lata w troche dziwnych kierunkach, trzeba sie temu jeszcze przyjrzeć. No i jak leci to widać go tylko przez krótką chwilę nie wiem czemu...
 
 [Piotrek] 16.08.2017 - Robie piekna plansze i przypomnialo mi sie, zeby NAPRAWIC PROBLEM Z CELOWNIKIEM!!!
 
