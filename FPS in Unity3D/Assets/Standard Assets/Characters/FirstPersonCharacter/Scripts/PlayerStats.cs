@@ -114,6 +114,27 @@ public class PlayerStats : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
     }
 
+    public bool canGetHealth()
+    {
+        if (currentHealth == maxHealth)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    void addHealth(int healthToAdd)
+    {
+
+        if (maxHealth - currentHealth >= healthToAdd)
+        {
+            currentHealth += healthToAdd;
+        }
+        else
+        {
+            currentHealth = maxHealth;
+        }
+    }
 
     void Start()
     {

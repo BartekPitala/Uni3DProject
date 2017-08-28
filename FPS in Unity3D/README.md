@@ -25,39 +25,43 @@
                       Te dziury sie tez pojawiaja troche obok celownika, dziwne to jest ale to musi byc zwiazane
                       mysle z jakimis poprzednimi czesciami tutoriala i tym gdzie "patrzy" dokladnie kamera albo cos.....
                       
-[Michał] 28.07.2017 - dodany wróg z animacjami
-                     
-                      brak w opcjach ravcast hit triggers, ale chyba sobie z tym poradziłem (choć nie jestem pewien)
+               
+[Michał] - co nam zostało?
+
+	Błędy:
+
+	powyższe błędy
+
+	//brak w opcjach ravcast hit triggers, ale chyba sobie z tym poradziłem (choć nie jestem pewien)
                     
-                      jak wróg nas uderza to nie ma jeszcze animacji z krwią 
+        jak wróg nas uderza to nie ma jeszcze animacji z krwią 
                       
-                     // wróg wisi w powietrzu (cos trzeba zrobic z osia y)
+        wróg wisi w powietrzu (trzeba w blenderze przesunąć jego środek)
+
+        wróg jak umiera to leży w powietrzu jak święty Piotr na krzyżu (podejrzewam, że jest to związane właśnie ze środkiem ciężkości)
+
+	napisy ze stanem amunicji     
+
+	w niektórych miejscach nadal tekstury na siebie nachodzą (jak znajdujecie takie miejsca, np. dwie płyty chodnikowe, to przesuńcie jedną z tych dwóch płyt o 1/1000 w dół)
+
+	w przejściu podziemnym ściany nie są spasowane
+
+	przez możliwość skakania nad wroga da się dojść do nieskończonej wysokości, bo wróg też się podnosi, a my znowu na nim skaczemy
+
+	
+
+          
                       
-[Michał] 04.08.2017 - co nam zostało?
+        dodać jeszcze kilka budynków
                       
-                      błędy powyższe są do naprawienia
+        porozkładać skrzynki z bronia, apteczki i wrogów 
                       
-                      dodam /*dźwięk podczas zbierania amunicji*/ oraz napisy ze stanem amunicji 
+        w menu gry można napisać zakładkę w której jest instrukcja ocb w grze (chodzi w niej o to, żeby wszystkich zabić jak najszybciej)
+        skoro jak najszybciej to zrobimy ranking z najlepszymi wynikami i może jakiś zegar w rogu czy coś 
                       
-                      --
-                    
-                      trzeba poprawić teren
+        logo trzeba dodac (załatwię gotowe od Mikołaja)
                       
-                      
-                      dodałbym kilka broni
-                      
-                      i może zbieranie czegoś co doda hp
-                      
-                      jak poprawimy teren to porozkładamy skrzynki z bronia i wrogów 
-                      
-                      w menu gry można napisać zakładkę w której jest instrukcja ocb w grze (chodzi w niej o to, żeby wszystkich zabić jak najszybciej)
-                      skoro jak najszybciej to zrobimy ranking z najlepszymi wynikami i może jakiś zegar w rogu czy coś 
-                      
-                     
-                      
-                      logo trzeba dodac (załatwię gotowe od Mikołaja)
-                      
-		      wróg jak umiera to leży w powietrzu jak święty Piotr na krzyżu
+		      
                       
 			
 		                       
