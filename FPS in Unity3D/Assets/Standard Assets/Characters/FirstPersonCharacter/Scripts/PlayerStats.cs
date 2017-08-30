@@ -180,11 +180,6 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            takeHit(30);
-        }
-
         if (canHeal > 0.0f)
         {
             canHeal -= Time.deltaTime;

@@ -36,4 +36,5 @@ public class GroundWeapon : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 10, 100, 20), "Press E to grab");
         }
     }
+
 }

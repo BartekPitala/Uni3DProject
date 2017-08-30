@@ -8,14 +8,14 @@ public class BloodScript : MonoBehaviour {
     private bool hit = false;
     private float opacity = 0.0f;
 
+    void hitted()
+    {
+        hit = true;
+        opacity = 0.6f;
+    }
+
     void OnGUI()
     {
-        if (Input.GetKey(KeyCode.P))
-        {
-            hit = true;
-            opacity = 0.6f;
-        }
-
         if (hit)
         {
             GUI.color = new Color(GUI.color.r, GUI.color.g, GUI.color.b, opacity);
