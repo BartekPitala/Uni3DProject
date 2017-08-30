@@ -31,16 +31,12 @@
 	Błędy:
 
 	powyższe błędy
-
-	//brak w opcjach ravcast hit triggers, ale chyba sobie z tym poradziłem (choć nie jestem pewien)
-                    
-        jak wróg nas uderza to nie ma jeszcze animacji z krwią 
                       
         wróg wisi w powietrzu (trzeba w blenderze przesunąć jego środek)
 
         wróg jak umiera to leży w powietrzu jak święty Piotr na krzyżu (podejrzewam, że jest to związane właśnie ze środkiem ciężkości)
 
-	napisy ze stanem amunicji     
+	//napisy ze stanem amunicji     
 
 	w niektórych miejscach nadal tekstury na siebie nachodzą (jak znajdujecie takie miejsca, np. dwie płyty chodnikowe, to przesuńcie jedną z tych dwóch płyt o 1/1000 w dół)
 
@@ -48,11 +44,16 @@
 
 	przez możliwość skakania nad wroga da się dojść do nieskończonej wysokości, bo wróg też się podnosi, a my znowu na nim skaczemy
 
+	Bullethole, nie da się przez nie przejść 
+	Czasem taki dźwięk przerywany jest i nie da się iść
+	Ogien z broni jak się bierze nową grę
+	Jak ma się karabin nie da się zebrać amunicji
 	
-
-          
+	
+	
+        menu poprawić  
                       
-        dodać jeszcze kilka budynków
+        dodać jeszcze kilka budynków, płot
                       
         porozkładać skrzynki z bronia, apteczki i wrogów 
                       
@@ -61,7 +62,8 @@
                       
         logo trzeba dodac (załatwię gotowe od Mikołaja)
                       
-		      
+	trzeba zrobić porządek w folderze Assets (im wcześniej tym łatwiej będzie naprawić błędy spowodowane tym porządkiem. Wrzuciłbym assety gotowe ze sklepu
+	do folderu "Assets from Store" i pousuwał nieużywane assety).
                       
 			
 		                       

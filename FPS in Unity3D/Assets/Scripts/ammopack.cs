@@ -38,7 +38,7 @@ public class ammopack : MonoBehaviour {
 	
 	void Update ()
     {
-        transform.Rotate(new Vector3(0, 0, 1));
+        transform.Rotate(new Vector3(0, 1, 0));
         if (isCollected)
         {
             timer += Time.deltaTime;

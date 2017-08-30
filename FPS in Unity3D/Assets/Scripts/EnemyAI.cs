@@ -44,7 +44,8 @@ public class EnemyAI : MonoBehaviour
                 if (timer <= 0)
                 {
                     animationSet("attack0");
-                    other.SendMessage("takeHit", attackDemage);
+                    other.SendMessage("takeHit", 10);
+                    other.SendMessage("hitted");
                     timer = attackDelay;
                 }
             }
@@ -102,7 +103,7 @@ public class EnemyAI : MonoBehaviour
             animator.SetBool("runToIdle0", false);
         }
     }
-
+    
     void takeHit(float demage)
     {
         hp -= demage;

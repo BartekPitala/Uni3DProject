@@ -30,10 +30,18 @@ public class Shooting : MonoBehaviour {
 	private float defaultFieldOfView = 60.0f;
 
     private float timer = 0.0f;
+    private float barWidth;
+    private float barHeight;
 
     public GameObject bloodParticles;
     public float demage = 5.0f;
 
+    void Awake()
+    {
+        barHeight = Screen.height * 0.04f;
+        barWidth = barHeight * 10.0f;
+        
+    }
 
     void Start ()
     {
@@ -134,6 +142,9 @@ public class Shooting : MonoBehaviour {
 			}
 		}
 
+        
+
+
     }
 
     public bool canGetAmmo()
@@ -173,6 +184,10 @@ public class Shooting : MonoBehaviour {
         {
             reloadText.enabled = false;
         }
+        GUI.Label(new Rect(10,
+                             Screen.height - barHeight - 110,
+                             300,
+                             barHeight*3), "AMMUNITION: " + currentClip + " / " + currentAmmo);
     }
 
 }
