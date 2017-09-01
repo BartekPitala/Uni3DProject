@@ -11,10 +11,12 @@ public class PlayerStats : MonoBehaviour
     private float currentArmour = 100;
     private float maxStamina = 100;
     private float currentStamina = 100;
-
+    private bool[] weapons = new bool[] { true, true, false, false, false, false, false, false, false, false };
     public Texture2D healthTexture;
     public Texture2D armourTexture;
     public Texture2D staminaTexture;
+    public Texture2D FrameTexture;
+    public Texture2D[] weaponsTextures = new Texture2D[5];
 
     private float barWidth;
     private float barHeight;
@@ -39,7 +41,6 @@ public class PlayerStats : MonoBehaviour
 
     void OnGUI()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //SceneManager.LoadScene("scene1");
@@ -47,7 +48,7 @@ public class PlayerStats : MonoBehaviour
         }
 
 
-
+        DrawWeaponsBar();
 
 
         GUI.DrawTexture(new Rect(10,
@@ -88,6 +89,12 @@ public class PlayerStats : MonoBehaviour
     }
 
 
+    public void updateWeapons(int index)
+    {
+        if (index < 5)
+            weapons[index] = true;
+    }
+
 
     void takeHit(float damage)
     {
@@ -106,7 +113,7 @@ public class PlayerStats : MonoBehaviour
         }
 
         if (currentHealth < maxHealth)
-        { 
+        {
             canHeal = 5.0f;
         }
 
@@ -171,8 +178,8 @@ public class PlayerStats : MonoBehaviour
 
     void regenerateHealth(ref float currentStat, float maxStat)
     {
-        if(currentStat<=10)
-         currentStat += maxStat * 0.003f;
+        if (currentStat <= 10)
+            currentStat += maxStat * 0.003f;
 
         currentStat += maxStat * 0.00003f;
         Mathf.Clamp(currentStat, 0, maxStat);
@@ -192,11 +199,38 @@ public class PlayerStats : MonoBehaviour
 
         if (canHeal <= 0.0f && currentHealth < maxHealth)
         {
-            regenerateHealth(ref currentHealth,maxHealth);
+            regenerateHealth(ref currentHealth, maxHealth);
         }
         if (canRegenerate <= 0.0f && currentStamina < maxStamina)
         {
             regenerateStamina(ref currentStamina, maxStamina);
+        }
+    }
+
+    void DrawWeaponsBar()
+    {
+        float weaponBarHeight = barHeight * 2.5f;
+        float weaponBarWidth = weaponBarHeight;
+        float firstBarXPosition = Screen.width / 3.5f;
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (weapons[i])
+            {
+                GUI.DrawTexture(new Rect(firstBarXPosition + i * weaponBarWidth,
+                    Screen.height * 0.87f,
+                    weaponBarWidth,
+                    weaponBarHeight),
+                    weaponsTextures[i]);
+            }
+            else
+            {
+                GUI.DrawTexture(new Rect(firstBarXPosition + i * weaponBarWidth,
+                     Screen.height * 0.87f,
+                     weaponBarWidth,
+                     weaponBarHeight),
+                     FrameTexture);
+            }
         }
     }
 }

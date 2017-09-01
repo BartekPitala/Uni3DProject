@@ -16,6 +16,7 @@ public class GroundWeapon : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 other.SendMessage("addGun", weaponNumber);
+                other.SendMessage("updateWeapons", weaponNumber);
                 Destroy(gameObject);
             }
         }
