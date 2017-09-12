@@ -27,11 +27,17 @@ public class EnemyAI : MonoBehaviour
     {
         if (other.tag.Equals("Player") && hp > 0)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - transform.position);
-            
+            //used temporary position, becouse Zombie has specific gravity under the object. Player has specific gravity in the center of the object.
+             Vector3 temporary = other.transform.position;
+             temporary.y -= other.GetComponent<CharacterController>().height/2;
+             Quaternion targetRotation = Quaternion.LookRotation(temporary - transform.position);
 
-            Quaternion finalRotation = Quaternion.Slerp(transform.rotation, targetRotation, 5.0f * Time.deltaTime);
-            transform.rotation = finalRotation;
+
+             Quaternion finalRotation = Quaternion.Slerp(transform.rotation, targetRotation, 5.0f * Time.deltaTime);
+             transform.rotation = finalRotation;
+           
+
+
 
             float distance = Vector3.Distance(transform.position, other.transform.position);
             if (distance > attackDistance && !stateInfo.IsName("Base Layer.wound"))
