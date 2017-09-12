@@ -31,29 +31,27 @@
 	Błędy:
 
 	powyższe błędy
-                      
-        wróg wisi w powietrzu (trzeba w blenderze przesunąć jego środek)
-
-        wróg jak umiera to leży w powietrzu jak święty Piotr na krzyżu (podejrzewam, że jest to związane właśnie ze środkiem ciężkości)
 
 	//napisy ze stanem amunicji     
 
-	w niektórych miejscach nadal tekstury na siebie nachodzą (jak znajdujecie takie miejsca, np. dwie płyty chodnikowe, to przesuńcie jedną z tych dwóch płyt o 1/1000 w dół)
+	w niektórych miejscach nadal tekstury na siebie nachodzą (jak widzicie takie miejsca, np. dwie płyty chodnikowe, to przesuńcie jedną z tych dwóch płyt o 1/1000 w dół)
 
 	w przejściu podziemnym ściany nie są spasowane
-
-	przez możliwość skakania nad wroga da się dojść do nieskończonej wysokości, bo wróg też się podnosi, a my znowu na nim skaczemy
 
 	Bullethole, nie da się przez nie przejść 
 	Czasem taki dźwięk przerywany jest i nie da się iść
 	Ogien z broni jak się bierze nową grę
 	Jak ma się karabin nie da się zebrać amunicji
+	Bron się nie buja 
+	Karabin nie strzela serią
+	Cieżarówka się rozjechała 
+	Budynki mają sciany do góry nogami (jeden taki znalazłem)
 	
 	
 	
         menu poprawić  
                       
-        dodać jeszcze kilka budynków, płot
+        dodać jeszcze kilka budynków
                       
         porozkładać skrzynki z bronia, apteczki i wrogów 
                       
@@ -64,6 +62,7 @@
                       
 	trzeba zrobić porządek w folderze Assets (im wcześniej tym łatwiej będzie naprawić błędy spowodowane tym porządkiem. Wrzuciłbym assety gotowe ze sklepu
 	do folderu "Assets from Store" i pousuwał nieużywane assety).
+                      
                       
 			
 		                       
