@@ -30,6 +30,8 @@
 
 	Błędy:
 
+	ZOMBIE PRZECHODZI PRZEZ WSZYSTKO CO CHCE
+
 	powyższe błędy
 
 	//napisy ze stanem amunicji     
@@ -39,12 +41,9 @@
 	w przejściu podziemnym ściany nie są spasowane
 
 	Bullethole, nie da się przez nie przejść 
-	Czasem taki dźwięk przerywany jest i nie da się iść
-	Ogien z broni jak się bierze nową grę
 	Jak ma się karabin nie da się zebrać amunicji
 	Bron się nie buja 
 	Karabin nie strzela serią
-	Cieżarówka się rozjechała 
 	Budynki mają sciany do góry nogami (jeden taki znalazłem)
 	
 	
@@ -60,14 +59,8 @@
                       
         logo trzeba dodac (załatwię gotowe od Mikołaja)
                       
-	trzeba zrobić porządek w folderze Assets (im wcześniej tym łatwiej będzie naprawić błędy spowodowane tym porządkiem. Wrzuciłbym assety gotowe ze sklepu
-	do folderu "Assets from Store" i pousuwał nieużywane assety).
                       
                       
 			
-		                       
-                      
-                      
-                      
-                      
-                      
+		                          
+

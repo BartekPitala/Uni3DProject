@@ -10,8 +10,7 @@ public class Shooting : MonoBehaviour {
     public AudioClip reloadSound;
     public int maxAmmo = 200;
     public int clipSize = 20;
-    public GUIText ammoText;
-    public GUIText reloadText;
+    
     public float reloadTime = 2.0f;
 	public bool automatic = false;
 	public float shotDelay = 0.5f;
@@ -173,17 +172,6 @@ public class Shooting : MonoBehaviour {
     void OnGUI()
     {
         GUI.DrawTexture(position, crosshairTexture);
-        ammoText.pixelOffset = new Vector2(-Screen.width / 2 + 100, -Screen.height / 2 + 30);
-        ammoText.text = currentClip + " / " + currentAmmo;
-
-        if (currentClip == 0)
-        {
-            reloadText.enabled = true;
-        }
-        else
-        {
-            reloadText.enabled = false;
-        }
         GUI.Label(new Rect(10,
                              Screen.height - barHeight - 110,
                              300,
