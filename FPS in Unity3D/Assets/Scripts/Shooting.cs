@@ -155,10 +155,8 @@ public class Shooting : MonoBehaviour {
         return true;
     }
 
-    void addAmmo(Vector2 data)
+    void addAmmo(int ammoToAdd)
     {
-        int ammoToAdd = (int)data.x;
-
         if (maxAmmo - currentAmmo >= ammoToAdd)
         {
             currentAmmo += ammoToAdd;

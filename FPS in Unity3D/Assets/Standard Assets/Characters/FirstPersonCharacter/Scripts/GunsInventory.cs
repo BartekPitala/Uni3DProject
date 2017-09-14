@@ -9,14 +9,26 @@ public class GunsInventory : MonoBehaviour
     private bool[] guns = new bool[] { false, true, false, false, false, false, false, false, false, false };
     private KeyCode[] keys = new KeyCode[] { KeyCode.Alpha0, KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9 };
     private int maxGuns = 1;
+    private int currentGun = 1;
+
+    public void setCurrentGun(int gun)
+    {
+        currentGun = gun;
+    }
+
+    public int getCurrentGun()
+    {
+        return currentGun;
+    }
 
     public void addGun(int number)
     {
+       
         guns[number] = true;
         maxGuns++;
     }
 
-
+  
 
 
     void Update()
@@ -26,6 +38,7 @@ public class GunsInventory : MonoBehaviour
         {
             if (Input.GetKeyDown(keys[i]) && guns[i])
             {
+                setCurrentGun(i);
                 hideGuns();
                 gunsList[i].SetActive(true);
             }

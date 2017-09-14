@@ -30,32 +30,40 @@
 
 	Błędy:
 
-	ZOMBIE PRZECHODZI PRZEZ WSZYSTKO CO CHCE
-
 	powyższe błędy
 
-	//napisy ze stanem amunicji     
+	ZOMBIE PRZECHODZI PRZEZ WSZYSTKO CO CHCE (czytam, że trzeba będzie użyć NavMesha. Będzie trochę roboty, ale wykonalne).
+
+	napisy (stan amunicji można przenieść nad teksturę z brońmi, stan życia, pancerza wyrównać z paskami) 
 
 	w niektórych miejscach nadal tekstury na siebie nachodzą (jak widzicie takie miejsca, np. dwie płyty chodnikowe, to przesuńcie jedną z tych dwóch płyt o 1/1000 w dół)
 
 	w przejściu podziemnym ściany nie są spasowane
 
 	Bullethole, nie da się przez nie przejść 
-	Jak ma się karabin nie da się zebrać amunicji
 	Bron się nie buja 
 	Karabin nie strzela serią
 	Budynki mają sciany do góry nogami (jeden taki znalazłem)
+	Przez Niektóre budynki z assetów da się przejść (jak się tego nie naprawi to się weźmie się po prostu inne assety)
 	
-	
+	dobrze, zeby bohater umarł jak mu się życie skończy
 	
         menu poprawić  
+	Menu:
+	Powrót
+	Nowa Gra
+	Instrukcja (może zróbmy tak, żeby nie jak najszybciej zabić określoną ilość, tylko jak najwięcej zabójstw w określonym czasie. 
+	Będą punkty respawnu, gdzie nowe zombie będą się tworzyć podczas gry).
+	Sterowanie (jesli nie damy rady zrobić tak, żeby użytkownik zmieniał sterowanie, to chociaż napiszmy w instrukcji jak sterować).
+	Tablica wyników
+	Wyjście
+	^takie coś mniej więcej
                       
-        dodać jeszcze kilka budynków
+        
+	dodać jeszcze kilka budynków i innych rzeczy (postarajcie się najpierw posprawdzać co mamy ściągnięte i te wykorzystać, bo nie wszystko jest użyte. 
+	Jak bierzecie ze sklepu to lekkie, budynek max. 30-40MB. Dobrze jak mozna go parę razy postawić.)
                       
         porozkładać skrzynki z bronia, apteczki i wrogów 
-                      
-        w menu gry można napisać zakładkę w której jest instrukcja ocb w grze (chodzi w niej o to, żeby wszystkich zabić jak najszybciej)
-        skoro jak najszybciej to zrobimy ranking z najlepszymi wynikami i może jakiś zegar w rogu czy coś 
                       
         logo trzeba dodac (załatwię gotowe od Mikołaja)
                       

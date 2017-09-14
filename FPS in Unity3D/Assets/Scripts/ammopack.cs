@@ -6,8 +6,7 @@ using UnityEngine;
 public class ammopack : MonoBehaviour {
 
 
-    public float ammunition = 25.0f;
-    public float gunType = 1.0f;
+    public int ammunition = 25;
     public AudioClip ammoCollect;
     public float destroyTime = 3.0f;
 
@@ -16,15 +15,30 @@ public class ammopack : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        Transform gun;
         if (other.tag.Equals("Player"))
         {
-            Transform gun = other.transform.Find("FPSCharacter/pistol");
-            if (gun.GetComponent<Shooting>().canGetAmmo())
+            if (other.GetComponent<GunsInventory>().getCurrentGun() == 1)
             {
-                gun.SendMessage("addAmmo", new Vector2(ammunition, gunType));
-                isCollected = true;
-                transform.position = new Vector3(0, 0, 0);
-                GetComponent<AudioSource>().Play();
+                gun = other.transform.Find("FPSCharacter/pistol");
+                if (gun.GetComponent<Shooting>().canGetAmmo())
+                {
+                    gun.SendMessage("addAmmo", ammunition);
+                    isCollected = true;
+                    transform.position = new Vector3(0, 0, 0);
+                    GetComponent<AudioSource>().Play();
+                }
+            }
+            else if (other.GetComponent<GunsInventory>().getCurrentGun() == 2)
+            {
+                gun = other.transform.Find("FPSCharacter/MP5");
+                if (gun.GetComponent<Shooting>().canGetAmmo())
+                {
+                    gun.SendMessage("addAmmo",ammunition);
+                    isCollected = true;
+                    transform.position = new Vector3(0, 0, 0);
+                    GetComponent<AudioSource>().Play();
+                }
             }
         }
     }
