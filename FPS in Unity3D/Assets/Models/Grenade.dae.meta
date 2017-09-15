@@ -60,6 +60,15 @@ ModelImporter:
     4300012: ID49
     4300014: Component_1
     4300016: ID77
+    6400000: Component_1
+    6400002: group_0
+    6400004: ID13
+    6400006: ID21
+    6400008: ID31
+    6400010: ID37
+    6400012: ID43
+    6400014: ID49
+    6400016: ID77
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -89,7 +98,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

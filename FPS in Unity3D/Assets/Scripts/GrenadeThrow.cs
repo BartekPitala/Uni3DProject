@@ -15,10 +15,11 @@ public class GrenadeThrow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		
 		if (Input.GetKeyDown (KeyCode.F) && currentGrenades > 0) 
 		{
 			Rigidbody clone = Instantiate (grenade, transform.position, transform.rotation) as Rigidbody;
-			clone.AddForce (transform.TransformDirection (Vector3.forward * 500));
+			clone.AddForce (transform.TransformDirection (Vector3.forward * 1000));
 			currentGrenades--;
 		}
 	}
