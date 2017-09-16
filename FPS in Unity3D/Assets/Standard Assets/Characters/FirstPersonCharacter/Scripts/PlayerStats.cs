@@ -27,16 +27,22 @@ public class PlayerStats : MonoBehaviour
     private float canRegenerate = 0.0f;
     private float canHeal = 0.0f;
 
+    private GUIStyle statsStyle = new GUIStyle();
+    public Font statsFont;
+    static public int currentClip;
+    static public int currentAmmo;
 
-
-
-    void Awake()
+void Awake()
     {
         barHeight = Screen.height * 0.04f;
         barWidth = barHeight * 10.0f;
         chCont = GetComponent<CharacterController>();
         fpsC = gameObject.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
         lastPosition = transform.position;
+
+        statsStyle.font = statsFont;
+        statsStyle.fontSize = 20;
+
     }
 
     void OnGUI()
@@ -67,10 +73,10 @@ public class PlayerStats : MonoBehaviour
 
         if (currentArmour > 0)
         {
-            GUI.Label(new Rect(barWidth + 20,
-                             Screen.height - barHeight - 42,
+            GUI.TextField(new Rect(barWidth + 20,
+                             Screen.height - barHeight * 2 - 20,
                              maxArmour,
-                             barHeight), (currentArmour / maxArmour * 100).ToString() + "/100");
+                             barHeight*2), "ARM " + (currentArmour / maxArmour * 100).ToString() + "/100", statsStyle);
         }
 
         GUI.DrawTexture(new Rect(10,
@@ -81,11 +87,16 @@ public class PlayerStats : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            GUI.Label(new Rect(barWidth + 20,
-                             Screen.height - barHeight - 77,
+            GUI.TextField(new Rect(barWidth + 20,
+                             Screen.height - barHeight * 3 - 30,
                              maxArmour,
-                             barHeight), (int)(currentHealth / maxHealth * 100) + "/100");
+                             barHeight * 2), "HP   " + (currentHealth / maxHealth * 100).ToString() + "/100", statsStyle);
         }
+       
+        GUI.TextField(new Rect(10,
+                            Screen.height * 0.73f,
+                            300,
+                            barHeight * 3), "AMMUNITION " + currentClip + " / " + currentAmmo, statsStyle);
     }
 
 
@@ -98,6 +109,12 @@ public class PlayerStats : MonoBehaviour
 
     void takeHit(float damage)
     {
+        if (currentHealth <= 0)
+        {
+            Destroy(fpsC);
+            Application.LoadLevel("GameOver");
+        }
+
         if (currentArmour > 0)
         {
             currentArmour -= damage;
@@ -211,7 +228,7 @@ public class PlayerStats : MonoBehaviour
     {
         float weaponBarHeight = barHeight * 2.5f;
         float weaponBarWidth = weaponBarHeight;
-        float firstBarXPosition = Screen.width / 3.5f;
+        float firstBarXPosition = Screen.width / 2.7f;
 
         for (int i = 0; i < 5; i++)
         {

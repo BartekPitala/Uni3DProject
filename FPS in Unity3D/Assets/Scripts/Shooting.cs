@@ -35,10 +35,16 @@ public class Shooting : MonoBehaviour {
     public GameObject bloodParticles;
     public float demage = 5.0f;
 
+    private GUIStyle statsStyle = new GUIStyle();
+    public Font statsFont;
+
     void Awake()
     {
         barHeight = Screen.height * 0.04f;
         barWidth = barHeight * 10.0f;
+
+        statsStyle.font = statsFont;
+        statsStyle.fontSize = 12;
         
     }
 
@@ -49,16 +55,22 @@ public class Shooting : MonoBehaviour {
                         (Screen.height - crosshairTexture.height) / 2,
                         crosshairTexture.width,
                         crosshairTexture.height);
-
         pistolSparks = GameObject.Find("Sparks");
         GetComponent<AudioSource>().clip = pistolShot;
         currentClip = clipSize;
 		pistolSparks.GetComponent<ParticleEmitter>().emit = false;
+
     }
 
 	
 	void Update ()
     {
+        PlayerStats.currentAmmo = currentAmmo;
+        PlayerStats.currentClip = currentClip;
+
+        statsStyle.font = statsFont;
+        statsStyle.fontSize = 12;
+
 		if (shotDelayCounter > 0) {
 			shotDelayCounter -= Time.deltaTime;
 		}
@@ -168,12 +180,8 @@ public class Shooting : MonoBehaviour {
     }
 
     void OnGUI()
-    {
-        GUI.DrawTexture(position, crosshairTexture);
-        GUI.Label(new Rect(10,
-                             Screen.height - barHeight - 110,
-                             300,
-                             barHeight*3), "AMMUNITION: " + currentClip + " / " + currentAmmo);
+    {   
+        GUI.DrawTexture(position, crosshairTexture);    
     }
 
 }

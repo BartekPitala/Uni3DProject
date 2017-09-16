@@ -22,8 +22,7 @@ public class GunsInventory : MonoBehaviour
     }
 
     public void addGun(int number)
-    {
-       
+    { 
         guns[number] = true;
         maxGuns++;
     }
@@ -33,7 +32,6 @@ public class GunsInventory : MonoBehaviour
 
     void Update()
     {
-        //gunsList[2].SetActive(false);
         for (int i = 0; i < keys.Length; i++)
         {
             if (Input.GetKeyDown(keys[i]) && guns[i])

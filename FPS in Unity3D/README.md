@@ -42,7 +42,6 @@
 
 	Bullethole, nie da się przez nie przejść 
 	Bron się nie buja 
-	Karabin nie strzela serią
 	Budynki mają sciany do góry nogami (jeden taki znalazłem)
 	Przez Niektóre budynki z assetów da się przejść (jak się tego nie naprawi to się weźmie się po prostu inne assety)
 	
