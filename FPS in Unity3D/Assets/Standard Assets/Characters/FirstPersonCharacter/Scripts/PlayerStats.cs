@@ -17,6 +17,7 @@ public class PlayerStats : MonoBehaviour
     public Texture2D staminaTexture;
     public Texture2D FrameTexture;
     public Texture2D[] weaponsTextures = new Texture2D[5];
+    public GameObject pausePanel;
 
     private float barWidth;
     private float barHeight;
@@ -32,8 +33,10 @@ public class PlayerStats : MonoBehaviour
     static public int currentClip;
     static public int currentAmmo;
 
+
 void Awake()
     {
+        UnPause();
         barHeight = Screen.height * 0.04f;
         barWidth = barHeight * 10.0f;
         chCont = GetComponent<CharacterController>();
@@ -47,9 +50,17 @@ void Awake()
 
     void OnGUI()
     {
+        if (Input.GetKeyDown(KeyCode.P) && !pausePanel.active)
+        {
+            //Application.LoadLevel("Menu");
+            Pause();
+        }
+        if (Input.GetKeyDown(KeyCode.R) && pausePanel.active)
+        {
+            UnPause();
+        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //SceneManager.LoadScene("scene1");
             Application.LoadLevel("Menu");
         }
 
@@ -76,9 +87,8 @@ void Awake()
             GUI.TextField(new Rect(barWidth + 20,
                              Screen.height - barHeight * 2 - 20,
                              maxArmour,
-                             barHeight*2), "ARM " + (currentArmour / maxArmour * 100).ToString() + "/100", statsStyle);
+                             barHeight*2), "ARM " + Mathf.Round(currentArmour / maxArmour * 100).ToString() + "/100", statsStyle);
         }
-
         GUI.DrawTexture(new Rect(10,
                                  Screen.height - barHeight * 3 - 30,
                                  currentHealth * barWidth / maxHealth,
@@ -90,7 +100,7 @@ void Awake()
             GUI.TextField(new Rect(barWidth + 20,
                              Screen.height - barHeight * 3 - 30,
                              maxArmour,
-                             barHeight * 2), "HP   " + (currentHealth / maxHealth * 100).ToString() + "/100", statsStyle);
+                             barHeight * 2), "HP   " + Mathf.Round(currentHealth / maxHealth * 100).ToString() + "/100", statsStyle);
         }
        
         GUI.TextField(new Rect(10,
@@ -249,5 +259,19 @@ void Awake()
                      FrameTexture);
             }
         }
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        pausePanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+        pausePanel.SetActive(false);
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }

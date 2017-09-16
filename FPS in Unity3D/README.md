@@ -44,19 +44,20 @@
 	Bron się nie buja 
 	Budynki mają sciany do góry nogami (jeden taki znalazłem)
 	Przez Niektóre budynki z assetów da się przejść (jak się tego nie naprawi to się weźmie się po prostu inne assety)
-	
-	dobrze, zeby bohater umarł jak mu się życie skończy
-	
-        menu poprawić  
-	Menu:
-	Powrót
-	Nowa Gra
-	Instrukcja (może zróbmy tak, żeby nie jak najszybciej zabić określoną ilość, tylko jak najwięcej zabójstw w określonym czasie. 
+
+  [Piotrek] 16.09.2017
+    MENU POPRAWIONE
+    PAUZOWANIE ODDZIELNIE OD RESZTY MENU. PAUZA JEST PO "P", GLOWNE MENU PO "ESC"
 	Będą punkty respawnu, gdzie nowe zombie będą się tworzyć podczas gry).
 	Sterowanie (jesli nie damy rady zrobić tak, żeby użytkownik zmieniał sterowanie, to chociaż napiszmy w instrukcji jak sterować).
+
+
+
+
+
+
 	Tablica wyników
-	Wyjście
-	^takie coś mniej więcej
+
                       
         
 	dodać jeszcze kilka budynków i innych rzeczy (postarajcie się najpierw posprawdzać co mamy ściągnięte i te wykorzystać, bo nie wszystko jest użyte. 
