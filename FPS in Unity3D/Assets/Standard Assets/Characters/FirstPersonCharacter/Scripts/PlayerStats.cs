@@ -32,6 +32,7 @@ public class PlayerStats : MonoBehaviour
     public Font statsFont;
     static public int currentClip;
     static public int currentAmmo;
+    public AudioClip hitSound;
 
 
 void Awake()
@@ -119,6 +120,11 @@ void Awake()
 
     void takeHit(float damage)
     {
+        if(damage>0.2f){
+        GetComponent<AudioSource>().clip = hitSound;
+        GetComponent<AudioSource>().Play();
+        }
+
         if (currentHealth <= 0)
         {
             Destroy(fpsC);

@@ -21,11 +21,11 @@ public class Menu : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.DrawTexture(new Rect(0, 0, 800, 300), GameLogo);
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), GameLogo);
 
 
 
-        GUI.BeginGroup(new Rect(Screen.width/10, Screen.height/1.6f, buttonWidth, (buttonHeight + buttonMargin) * 3));
+        GUI.BeginGroup(new Rect(Screen.width/2-buttonWidth/2, Screen.height/2.2f, buttonWidth, (buttonHeight + buttonMargin) * 3));
         if (GUI.Button(new Rect(0, 0, buttonWidth, buttonHeight), "NEW GAME", mainStyle))
         {
             //SceneManager.LoadScene("scene1");
@@ -49,7 +49,7 @@ public class Menu : MonoBehaviour
     {
         buttonWidth = (buttonWidth * Screen.width) / 1920;
         buttonHeight = (buttonHeight * Screen.height) / 1080;
-        buttonMargin = (buttonMargin * Screen.height) / 1080;
+        buttonMargin = (buttonMargin * Screen.height) / 300;
         Cursor.visible = true;
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         mainStyle.font = mainFont;
