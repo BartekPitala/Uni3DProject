@@ -34,6 +34,9 @@ public class PlayerStats : MonoBehaviour
     static public int currentAmmo;
     public AudioClip hitSound;
 
+	public float timeLeft;
+	public float timer;
+
 
 void Awake()
     {
@@ -51,6 +54,7 @@ void Awake()
 
     void OnGUI()
     {
+		timer = Time.time;
         if (Input.GetKeyDown(KeyCode.P) && !pausePanel.active)
         {
             //Application.LoadLevel("Menu");
@@ -107,8 +111,20 @@ void Awake()
         GUI.TextField(new Rect(10,
                             Screen.height * 0.73f,
                             300,
-                            barHeight * 3), "AMMUNITION " + currentClip + " / " + currentAmmo, statsStyle);
-    }
+                            barHeight * 3), "AMMUNITION: " + currentClip + " / " + currentAmmo, statsStyle);
+
+		GUI.TextField(new Rect(10,
+			Screen.height * 0.68f,
+			300,
+			barHeight * 3), "TIMER:  " + Mathf.Round(timeLeft - timer), statsStyle);
+    	
+		if ((timeLeft - timer) < 0) {
+			GUI.TextField(new Rect(Screen.width *0.5f,
+				Screen.height * 0.5f,
+				500,
+				barHeight * 3), "GAME OVER!!!", statsStyle);
+		}
+	}
 
 
     public void updateWeapons(int index)
@@ -178,7 +194,7 @@ void Awake()
 
     void Start()
     {
-
+		timeLeft = 100.0f;
     }
 
     void FixedUpdate()
