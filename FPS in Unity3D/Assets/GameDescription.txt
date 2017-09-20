@@ -1,0 +1,19 @@
+Welcome to MMP Shooter!
+
+At ease, soldier. This is a short introduction to game principles and mechanics.
+Due to an experiment that went out of control, the city of New York has been infected with a deadly disease. 
+What's worse, some of the deceased rise again as bloodthirsty zombies!
+Whoever could, evacuated from the city in order to escape the plague and the undead. 
+A quarantine has been applied to prevent further spread of the disease.
+The city of New York is a ghost town now...
+But the time has come to reclaim the crown jewel of human civilization!
+You are a member of an elite strike force - Your job is to enter the city and exterminate the unwelcome guests.
+Due to an extreme level of contamination, You are only allowed to stay in the city for a short period of time, limited by Your gas mask canister lifetime.
+This value is presented on Your visor display as "CANISTER LIFETIME". When it reaches zero, You will either suffocate, or have to remove the mask and be infected by the plague...
+In addition, You must kill ALL the zombies in Your operational area. Only then You can escape the city. We can not allow even one of them to remain "alive"! 
+Therefore, Soldier, I strongly advise You not to waste time on sightseeing, and focus on killing these filthy beasts.
+I think I don't have to mention - the undead are not going to let You slaughter them without fight. Do not let them come close. Their claws can easily penetrate Your armor!
+If You run low on ammo, search for the canisters left over by the previous strike forces. There may also be some weapons left on site.
+When You get hit, search for a first aid kit.
+If You manage to complete the mission, Your time will be put on the fastest-killers list. Can You beat Your own time in the next run?
+Now get out of here and kill some zombies!!!

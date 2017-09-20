@@ -57,7 +57,6 @@ void Awake()
 		timer = Time.time;
         if (Input.GetKeyDown(KeyCode.P) && !pausePanel.active)
         {
-            //Application.LoadLevel("Menu");
             Pause();
         }
         if (Input.GetKeyDown(KeyCode.R) && pausePanel.active)
@@ -119,10 +118,8 @@ void Awake()
 			barHeight * 3), "TIMER:  " + Mathf.Round(timeLeft - timer), statsStyle);
     	
 		if ((timeLeft - timer) < 0) {
-			GUI.TextField(new Rect(Screen.width *0.5f,
-				Screen.height * 0.5f,
-				500,
-				barHeight * 3), "GAME OVER!!!", statsStyle);
+			Destroy(fpsC);
+            Application.LoadLevel("GameOver");
 		}
 	}
 

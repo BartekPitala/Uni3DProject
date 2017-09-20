@@ -1,0 +1,60 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using System.IO;
+
+public class About : MonoBehaviour {
+
+    public Texture GameLogo;
+    public AudioClip buttonOnClickSound;
+    public Texture2D cursorTexture;
+    public CursorMode cursorMode = CursorMode.Auto;
+    private GUIStyle mainStyle = new GUIStyle();
+    public Font mainFont;
+    public Vector2 hotSpot = Vector2.zero;
+    public float buttonWidth = 500;
+    public float buttonHeight = 1000;
+    private float buttonMargin = 20;
+    public GUISkin skin;
+    public Text gameDescription;
+
+
+    void OnGUI()
+    {
+       // StreamReader reader = new StreamReader("Assets/GameDescription.txt"); 
+
+    	GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), GameLogo);
+        GUI.BeginGroup(new Rect(Screen.width/2-buttonWidth/2, Screen.height/3f, buttonWidth, (buttonHeight + buttonMargin) * 2));
+        if (GUI.Button(new Rect(0, 0, buttonWidth*1.6f, buttonHeight), "BACK TO MAIN MENU", mainStyle))
+        {
+            GetComponent<AudioSource>().clip = buttonOnClickSound;
+            GetComponent<AudioSource>().Play();
+            Application.LoadLevel("Menu");
+        }
+         if (GUI.Button(new Rect(0, Screen.height/10, buttonWidth, buttonHeight), "PITALA WPISZ TU SWOJ OPIS,  PROSZE!", mainStyle))
+        {
+
+        }
+      
+        GUI.EndGroup();
+        GUI.skin = skin;
+
+    }
+
+	// Use this for initialization
+	void Start () {
+		buttonWidth = (buttonWidth * Screen.width) / 1920;
+        buttonHeight = (buttonHeight * Screen.height) / 1080;
+        buttonMargin = (buttonMargin * Screen.height) / 300;
+        Cursor.visible = true;
+        Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
+        mainStyle.font = mainFont;
+        mainStyle.fontSize = 13;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}

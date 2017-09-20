@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
 
+    public AudioClip buttonOnClickSound;
     public Texture GameLogo;
     public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
@@ -28,15 +29,20 @@ public class Menu : MonoBehaviour
         GUI.BeginGroup(new Rect(Screen.width/2-buttonWidth/2, Screen.height/2.2f, buttonWidth, (buttonHeight + buttonMargin) * 3));
         if (GUI.Button(new Rect(0, 0, buttonWidth, buttonHeight), "NEW GAME", mainStyle))
         {
-            //SceneManager.LoadScene("scene1");
+            GetComponent<AudioSource>().clip = buttonOnClickSound;
+            GetComponent<AudioSource>().Play();
             Application.LoadLevel("scene1");
         }
-        if (GUI.Button(new Rect(0, 0 + buttonHeight + buttonMargin, buttonWidth, buttonHeight), "OPTIONS", mainStyle))//, disabledButton))
+        if (GUI.Button(new Rect(0, 0 + buttonHeight + buttonMargin, buttonWidth, buttonHeight), "ABOUT", mainStyle))
         {
-
+            GetComponent<AudioSource>().clip = buttonOnClickSound;
+            GetComponent<AudioSource>().Play();
+            Application.LoadLevel("AboutScene");
         }
         if (GUI.Button(new Rect(0, 0 + (buttonHeight + buttonMargin) * 2, buttonWidth, buttonHeight), "EXIT", mainStyle))
         {
+            GetComponent<AudioSource>().clip = buttonOnClickSound;
+            GetComponent<AudioSource>().Play();
             Application.Quit();
         }
         GUI.EndGroup();
