@@ -9,7 +9,7 @@ public class PlayerStats : MonoBehaviour
     private float currentHealth = 100;
     private float maxArmour = 100;
     private float currentArmour = 100;
-    private float maxStamina = 100;
+    private float maxStamina = 300;
     private float currentStamina = 100;
     private bool[] weapons = new bool[] { true, true, false, false, false, false, false, false, false, false };
     public Texture2D healthTexture;
@@ -115,7 +115,7 @@ void Awake()
 		GUI.TextField(new Rect(10,
 			Screen.height * 0.68f,
 			300,
-			barHeight * 3), "TIMER:  " + Mathf.Round(timeLeft - timer), statsStyle);
+			barHeight * 3), "CANISTER LIFETIME:  " + Mathf.Round(timeLeft - timer), statsStyle);
     	
 		if ((timeLeft - timer) < 0) {
 			Destroy(fpsC);
@@ -191,7 +191,7 @@ void Awake()
 
     void Start()
     {
-		timeLeft = 100.0f;
+		timeLeft = 240.0f;
     }
 
     void FixedUpdate()
