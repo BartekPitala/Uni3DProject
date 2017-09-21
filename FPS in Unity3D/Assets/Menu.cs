@@ -60,6 +60,7 @@ public class Menu : MonoBehaviour
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         mainStyle.font = mainFont;
         mainStyle.fontSize = 20;
+        Screen.lockCursor = false;
     }
 
     // Update is called once per frame

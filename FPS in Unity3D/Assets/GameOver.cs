@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour {
 
-
+	public AudioClip buttonOnClickSound;
     public Texture GameOverTexture;
 	public float buttonWidth = 50;
     public float buttonHeight = 100;
@@ -19,10 +19,14 @@ public class GameOver : MonoBehaviour {
         
         if (GUI.Button(new Rect(Screen.width*0.4f-buttonWidth / 2.0f, Screen.height*0.6f, buttonWidth, buttonHeight), "PLAY AGAIN", mainStyle))
         {
+        	GetComponent<AudioSource>().clip = buttonOnClickSound;
+            GetComponent<AudioSource>().Play();
             Application.LoadLevel("scene1");
         }
         if (GUI.Button(new Rect(Screen.width * 0.6f-buttonWidth / 2.0f, Screen.height * 0.6f, buttonWidth, buttonHeight), "MAIN MENU", mainStyle))
         {
+        	GetComponent<AudioSource>().clip = buttonOnClickSound;
+            GetComponent<AudioSource>().Play();
             Application.LoadLevel("Menu");
         }
 
@@ -37,6 +41,7 @@ public class GameOver : MonoBehaviour {
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         mainStyle.font = mainFont;
         mainStyle.fontSize = 20;
+        Screen.lockCursor = false;
     }
 	
 	// Update is called once per frame
