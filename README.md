@@ -1,5 +1,6 @@
 # Uni3DProject:
 FPS in Unity3D
+![Logo](https://github.com/BartekPitala/Uni3DProject/blob/master/logo.png)
 
 # Introduction:
 The  "FPS in Unity3D  project was created as a part of "Python in the Enterprise" course run at AGH University of Science and Technology, supervised by Ph.D. Tomasz Szumlak and MSc. Adam Dendek.
@@ -23,9 +24,9 @@ In the course of the project, all the tools needed to develop the game were prov
 
 # Contributors:
 The project was created by:
-Michał Matuszewski
-Piotr Marszałek
-Bartłomiej Pitala
+[Michał Matuszewski](http://github.com/rxrt8)
+[Piotr Marszałek](https://github.com/piotrmarszalek)
+[Bartłomiej Pitala](https://github.com/BartekPitala)
 
 
 
