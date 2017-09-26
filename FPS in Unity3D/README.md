@@ -1,29 +1,38 @@
-﻿# Uni3DProject:
-FPS in Unity3D
-![Logo](https://github.com/BartekPitala/Uni3DProject/blob/master/logo.png)
+﻿#CHANGELOG
 
-# Introduction:
-The  "FPS in Unity3D  project was created as a part of "Python in the Enterprise" course run at AGH University of Science and Technology, supervised by Ph.D. Tomasz Szumlak and MSc. Adam Dendek.
-The project's aim was to create a First-Person shooter game based on Unity3D engine. This task was not fulfilled in 100%, there are still some minor bugs and not implemented functionalities which will be added later.
+      
+[Michał] - co nam zostało?
 
-# Installation:
-Due to big size of compiled .exe file - too big to be supported by GitHub - the game is distributed as a Unity3D project, available to compile using the Unity editor.
-Besides the repository content, the only thing needed to install and run the game is Unity3D editor, version 5.6.2, available to download here: https://unity3d.com/get-unity/download/archive
-The game can be run either from Unity editor - simply open Unity3d Editor, choose the project directory path and after loading components is complete, You can either press "play" in the top of the screen to play the game in a preview mode, or use the editor to compile the project and play from an .exe file - this operation takes some time so be patient.
+	Błędy:
 
-# Detailed description:
-Our aim was to learn how to use UnityEngine to produce high-quality games. The task was a complex one, meaning we had to use both our programming skills to create scripts running on the back-end of the game, but also learn how to use the UnityEditor to create 3D game environment using provided and self-created game assets, texturing, particle emitting.
-The back-end of the project was created using C# programming language.
-Detailed description of in-game mechanics is provided by the built-in-game "About" option, which we strongly advise to read before playing.
+	ZOMBIE PRZECHODZI PRZEZ WSZYSTKO CO CHCE (czytam, że trzeba będzie użyć NavMesha. Będzie trochę roboty, ale wykonalne).
 
-# Encountered obstacles:
-During the production process, we faced many unexpected problems, ranging from not being able to execute the scripts properly, to difficulties with asset placement. Luckily, most of the problems had been resolved.
+	w przejściu podziemnym ściany nie są spasowane
 
-# Technologies used:
-In the course of the project, all the tools needed to develop the game were provided by the UnityEngine editor. Some of the in-game objects were obtained from the Unity Asset Store: https://www.assetstore.unity3d.com/. The back-end of the game is implemented in C#.
+	Bullethole, nie da się przez nie przejść 
 
-# Contributors:
-The project was created by:
-[Michał Matuszewski](http://github.com/rxrt8)
-[Piotr Marszałek](https://github.com/piotrmarszalek)
-[Bartłomiej Pitala](https://github.com/BartekPitala)
+	Budynki mają sciany do góry nogami (sklepy) //ja bym je usunął i dał inne assety
+	Przez Niektóre budynki z assetów da się przejść (wieża radiowa)
+	Będą punkty respawnu, gdzie nowe zombie będą się tworzyć podczas gry.
+	
+ 	
+   	MENU:
+	nei wiem czy działa exit
+	Sterowanie (jesli nie damy rady zrobić tak, żeby użytkownik zmieniał sterowanie, to chociaż napiszmy w instrukcji jak sterować, trzeba wspomnieć, że pauza to p).
+	Tablica wyników
+	przesuwanie w zakładce About w menu
+                      
+        
+	dodać jeszcze kilka budynków i innych rzeczy (postarajcie się najpierw posprawdzać co mamy ściągnięte i te wykorzystać, bo nie wszystko jest użyte. 
+	Jak bierzecie ze sklepu to lekkie, budynek max. 30-40MB. Dobrze jak mozna go parę razy postawić.)
+                      
+                      
+ 	R to odpauzowanie, ale też zmiana magazynka przez co po odpauzowaniu przeładowuje się magazynek 
+                      
+        u mnie jest napis "NEW GAM" //nie ma e na końcu            
+         
+	nie wiem czy wrogów nie jest za dużo          
+			
+	
+		                          
+
