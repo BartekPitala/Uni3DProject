@@ -20,6 +20,12 @@ public class About : MonoBehaviour {
     public Text gameDescription;
 
 
+	int calc_font_size()
+	{
+		int font_size = Screen.width / 120;
+		return font_size;
+	}
+
     void OnGUI()
     {
 		StreamReader reader = new StreamReader("Assets/about_text.txt"); 
@@ -33,7 +39,7 @@ public class About : MonoBehaviour {
             GetComponent<AudioSource>().Play();
             Application.LoadLevel("Menu");
         }
-		if (GUI.Button(new Rect(0, Screen.height/25, 1000, 1000), text, mainStyle))
+		if (GUI.Button(new Rect(0, Screen.height/25, (Screen.width - 200), (Screen.height - 200)), text, mainStyle))
         {
         }
       
@@ -50,7 +56,7 @@ public class About : MonoBehaviour {
         Cursor.visible = true;
         Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
         mainStyle.font = mainFont;
-        mainStyle.fontSize = 13;
+		mainStyle.fontSize = calc_font_size ();
 	}
 	
 	// Update is called once per frame
