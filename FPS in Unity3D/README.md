@@ -1,37 +1,26 @@
 ﻿#CHANGELOG
 
       
-[Michał] - co nam zostało?
+//TODO
 
-	Błędy:
-
-	ZOMBIE PRZECHODZI PRZEZ WSZYSTKO CO CHCE (czytam, że trzeba będzie użyć NavMesha. Będzie trochę roboty, ale wykonalne).
-
-	w przejściu podziemnym ściany nie są spasowane
-
-	Bullethole, nie da się przez nie przejść 
-
-	Budynki mają sciany do góry nogami (sklepy) //ja bym je usunął i dał inne assety
-	Przez Niektóre budynki z assetów da się przejść (wieża radiowa)
-	Będą punkty respawnu, gdzie nowe zombie będą się tworzyć podczas gry.
+	documentation
 	
- 	
+	bugs:
+	walls should be smooth
+	Bullethole should be penetrable
+	radio tower should be impenetrable  
+	respawn points for zombies
+	change letter for weapon reloading (now R is weapon reloading and game restarting) 
+	
    	MENU:
-	nei wiem czy działa exit
-	Sterowanie (jesli nie damy rady zrobić tak, żeby użytkownik zmieniał sterowanie, to chociaż napiszmy w instrukcji jak sterować, trzeba wspomnieć, że pauza to p).
-	Tablica wyników
-	przesuwanie w zakładce About w menu
-                      
-        
-	dodać jeszcze kilka budynków i innych rzeczy (postarajcie się najpierw posprawdzać co mamy ściągnięte i te wykorzystać, bo nie wszystko jest użyte. 
-	Jak bierzecie ze sklepu to lekkie, budynek max. 30-40MB. Dobrze jak mozna go parę razy postawić.)
-                      
-                      
- 	R to odpauzowanie, ale też zmiana magazynka przez co po odpauzowaniu przeładowuje się magazynek 
-                      
-        u mnie jest napis "NEW GAM" //nie ma e na końcu            
-         
-	nie wiem czy wrogów nie jest za dużo          
+	instruction with game control (write that pause is p)
+	score board 
+	
+        add some buildings (size max 30-40MB)    
+              
+        maybe now is to much enemies    
+	
+	write that zombies are ghosts 
 			
 	
 		                          
